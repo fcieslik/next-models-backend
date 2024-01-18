@@ -2,7 +2,9 @@ name: Vercel Preview Deployment
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-  DUPA_API_KEY: ${{ secrets.DUPA_API_KEY }}
+  MODEL_ID: ${{ secrets.MODEL_ID }}
+  OPEN_AI_KEY: ${{ secrets.OPEN_AI_KEY }}
+  ACCESS_KEY: ${{ secrets.ACCESS_KEY}}
 on:
   push:
     branches-ignore:
