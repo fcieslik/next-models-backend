@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
   if (bearerToken !== `Bearer ${key}`) {
     return NextResponse.json(
       {
-        error: "You are not authorized to use this endpoint",
+        error: "You are not authorized to use this endpoint!",
         dupa: `Bearer ${key}`,
       },
       { status: 401 }
